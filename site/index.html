@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>El que surt de nom a la pestanya</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>Aqui, l'element header, aniria una petita introduccio a la plana</header>
 	<nav>L'element nav esta per a dirigir-se a diferents seccions de la plana, encara no esta aplicat</nav>
 <h1>Titol de la pagina, obligatori</h1>
 	<h2>Index</h2>
-		<ol>
+		<ol class="boto">
 			<li><a href="#puja">Comandes per a pujar la web i altres</a></li>
 			<li><a href="#marcats">Marcats de noves linees</a></li>
 			<li><a href="#subtitols">Subtitols</a></li>
@@ -17,6 +18,8 @@
 			<li><a href="#llenguatge">Llenguatge html a la plana</a></li>
 			<li><a href="#links">Links</a></li>
 			<li><a href="#images">Imatges</a></li>
+			<li><a href="#cssedit">Paragraf editable</a></li>
+			<li><a href="#csssele">Modes de seleccio del css</a></li>
 			<li><a href="#fotos">Fotos</a></li>
 		</ol>
 	<h2 id="puja">Comandes per a pujar la web i altres</h2>
@@ -74,12 +77,45 @@
 		<div>Amb l'element a, podem fer links a les altres pagines de la propia web Com per exemple fent click <a href="link.html" target="_blank">aqui</a> o podem fer links cap a fora fent click a les imatges tan maques que tenim. Posant target="_blank" al element a farem que els links s'obrin a una pestanya nova. Un altre exemple de links es el propi index</div>
 	<h2 id="images">Imatges</h2>
 		<div>Les fotos poden ser part de la carpeta del mateix document html(com les que ja tenim al apartat Fotos) o poden ser de fonts externes com la seguent:
-			<div><img src="data:image/jpeg;base64,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" alt="gman"></div>
+			<div><img src="https://i1.theportalwiki.net/img/thumb/0/0a/Portal_Cake.png/200px-Portal_Cake.png" alt="cake"></div>
 		Potser el link es molt llarg pero la foto es veu. Tambe es casi obligat posar un alt que defineixi la foto, i un height(altura) i un width(amplada) per a establir el tamany
 	</div>
+	<h2 id="cssedit">Paragraf editable</h2>
+	<div>
+		<div class="boto"><a href=cssplay.html target="_blank">Experiments amb css</a></div>
+		<p id="peditable">Aquest paragraf esta aqui per a deixar que el css el canvii d'estil com marqui quan em roti, per aixo es veu d'un color diferent, una lletra diferent, tamany... Per a veure-ho mes clar he d'allargar el text una miqueta posant la lletra del sol solet: Sol solet, vine'm a veure-ho 'm a veuresol solet ine'm a veureque tinc fred. Si tens fredposa't la capaposa't la capasi tens fred,posa't la capai el barret.No tinc capa ni barret,per abrigar-me,per abrigar-meno tinc capa ni barret,per abrigar-mequan fa fred!.</p>
+	</div>
+	<h2 id="csssele">Modes de seleccio del css</h2>
+	<div>
+	<ul>
+		<li>Per element: el css selecciona tots els elements que tinguin el mateix nom(tots els h2, tots els p, tots els article). En la sintaxi, l'element es posa sol i ja esta. Escriptura en css: p {}, h2{}.</li>
+		<li>Per class: el css selecciona tots els elements que comparteixin la mateixa class, es a dir tots els elements que tinguin class="el mateix" independentment del nom. Diferents elements poden compartir una mateixa class. Un element pot tenir mes d'una class, nomes hem de posar un espai entre elles al mateix atribut class. Escriptura en css: .blue {}, .text{}.</li>
+		<li>Per ID: el css selecciona l'element que te el ID definit. Funciona similar a la seleccio per class pero nomes hi pot haver un element amb el ID. Escriptura en css: #arbre{}, #deu{}.</li>
+	</ul>
+	<p>Podem combinar les maneres de seleccionar del css per a aplicar les mateixes regles a diferents elements de moltes formes diferents.</p>
+		<ul>
+			<li>Es poden combinar regles de seleccio per a augmentar l'aplicacio(aplicar a un tipus d'element+una class, una class+un id).Exemple de css: p, .text{}(tots els p i els class=text) o .verd, #arbre{}(tots els class=verd i el ID=arbre).</li>
+			<li>O tambe en poden combinar per a aplicar-les de forma mes restrictiva:
+				<ul>
+					<li>El class d'un element: nomes es veuran afectats les entitats que comparteixin un class i un element definits. Exemple en css: p.hey {}(Tots els p amb class=hey)</li>
+					<li>Element dins element restrictiu: es veuran afectats els elements que estiguin dins un altre element definit directament, pero no es veura afectat si el primer element esta dins  d'un altre element i aquest dins del segon element. Exemple en css: div &gt; p {}(tots els p dins de div directament)</li>
+					<li>Element dins element permissiu: es similar al anterior exemple, pero en aquest cas ignora la regla de l'element dins d'element dins d'element aixi que es pot aplicar la regla a tots els elements dins de l'element. Exemple en css: div p(tots els p dins de div sense discriminar)</li>
+					<li>En aquestes regles de dins d'element tambe es poden fer servir diverses seleccions, per exemple per a aplicar elements concrets dins d'una class o d'un ID, o aplicar a una class nomes si estan dins un element concret, o un ID. Exemple en css: #hol div {}(tots els div dins del ID=hol sense discriminar), div &gt; .yey {}(tots els class=yey dins d'un div directament)</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<h2>Pseudoclasses</h2>
+	<ul>
+		<li>:link : aplicara l'estil als links no visitats</li>
+		<li>:visited : aplica l'estil als links ja visitats</li>
+		<li id="hover">:hover : aplica l'estil quan es passa el ratoli per sobre</li>
+		<li id="active">:active : aplica l'estil quan el ratoli l'esta clicant a sobre, prova a clicar a aquesta frase</li>
+		<li>:nth-child():aplica l'estil segons el que es posi entre parentesi(4, odd, 15). Es pot combinar amb les altres pseudoclasses</li>
+	</ul>
 	<h2 id="fotos">Fotos:</h2>
 		<a href="https://www.instagram.com/therogersito/?hl=es" target="_blank"><img src="fotocuqui.PNG" height="300" width="300" alt="insta Roger"></a>
 		<a href="https://www.instagram.com/cclaudiatinamentee/?hl=es" target="_blank"><img src="claudia.PNG" height="300" width="300" alt="insta Claudia"></a>
-	<div><a href="#top">Per tornar a dalt de tot fes click aqui</a></div>
+	<div class="boto"><a href="#top">Per tornar a dalt de tot fes click aqui</a></div>
 </body>
 </html>

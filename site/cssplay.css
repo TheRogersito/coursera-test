@@ -1,0 +1,23 @@
+h1, #el {
+	font-family: Tahoma;
+	text-decoration: underline;
+}
+.hey {
+	color: green;
+	background-color: lightgray;
+}
+div > span{
+	font-size: 26px;
+}
+div span{
+	color: blue;
+}
+p {
+	font-style: italic;
+}
+div {
+	font-weight: bold;
+}
+#test, #test2{
+	background-color: blue
+}

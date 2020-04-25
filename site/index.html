@@ -121,13 +121,12 @@
 		<li>:nth-child():aplica l'estil segons el que es posi entre parentesi(4, odd, 15). Es pot combinar amb les altres pseudoclasses</li>
 	</ul>
 	<h2 id="metestil">Mètodes d'estil</h2>
-	<dir>Hi ha tres maneres d'aplicar el css en un document html:
+	<p>Hi ha tres maneres d'aplicar el css en un document html:</p>
 		<ul>
 			<li>Arxiu extern: Creant un link a l'arxiu extern css amb les instruccions dins l'eleent head de la següent manera: link rel="stylesheet" type="text/css" href="nomdelarxiu.css"</li>
 			<li>Element style: Creem l'element style dins de l'element head i hi posem a dins les instruccions css</li>
 			<li>Dins de l'element: Posem la norma css dins de l'element. No haurem de posar target al css perque aplicarà la norma a l'element, pero per a aplicar-ho a altres hem de copiar i enganxar-ho tot. Exemple d'escriptura: p style="text-align:center;"</li>
 		</ul>
-	</dir>
 	<h2 id="conflictes">Resolució de conflictes css</h2>
 	<div style="color:blue">Per a resoldre conflictes en css, és a dir normes d'aplicació contradictories hi ha diferents maneres d'acabar amb els problemes
 		<ul>
@@ -168,8 +167,8 @@
 			<li>Border</li>
 			<li>Margin</li>
 		</ol>
-		Les tres últimes capes poden modificar-se amb el css amb la propietat del seu mateix nom(per exemple: padding: 10px 10px 10px 10px;). L'ordre del píxels vol dir: superior, dreta, inferior, esquerra. També podem definir el seu color en el css en el cas del border, els altres no. Si definim un width a la caixa, aquest serà el width que ocuparà el seu contingut. No obstant hi ha una instrucció que permet combinar les amplades i que el width defineixi l'amplada absoluta de la caixa, és l'ordre <span id="box-sizing">box-sizing: order-box;</span>
-		<div>Per a aplicar l'ordre <span id="box-sizing">box-sizing: order-box;</span> hem, de posar-la dins de l'element * al css, que significa que s'aplicarà a tots els elements sense excepció, així que també podem sobreescriure el que el navegador ens aplica per defecte</div>
+		Les tres últimes capes poden modificar-se amb el css amb la propietat del seu mateix nom(per exemple: padding: 10px 10px 10px 10px;). L'ordre del píxels vol dir: superior, dreta, inferior, esquerra. També podem definir el seu color en el css en el cas del border, els altres no. Si definim un width a la caixa, aquest serà el width que ocuparà el seu contingut. No obstant hi ha una instrucció que permet combinar les amplades i que el width defineixi l'amplada absoluta de la caixa, és l'ordre <span class="box-sizing">box-sizing: order-box;</span>
+		<div>Per a aplicar l'ordre <span class="box-sizing">box-sizing: order-box;</span> hem, de posar-la dins de l'element * al css, que significa que s'aplicarà a tots els elements sense excepció, així que també podem sobreescriure el que el navegador ens aplica per defecte</div>
 		<div class="marges">Marges acomulatius: en cas que dues caixes estiguin juntes, els seus margin actuaràn de diferent manera si estàn junts d'esquerra a dreta o de dalt i a baix. Si estàn l'un al costat de l'altre els seus margin se sumaràn i entre els seus bprder hi haurà una distància  de margin+margin. No obstant, si estàn un a sobre de l'altre, la distància entre borders serà la del margin més gran</div>
 		<div class="marges">Contingut fora de caixa: quan una caixa és massa petita pel contingut que té a dins, hi ha la propietat css overflow, que té diferents opcions:
 			<ul>

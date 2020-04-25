@@ -6,10 +6,9 @@ body {
 	font-size: 105%;
 	text-align: justify;
 	position:relative;
-	left:15px;
-	top:15px;
-	bottom:20px;
-	width:1800px;
+	margin-left:20px;
+	margin-top:20px;
+	margin-right:50px;
 }
 #hover:hover {
 	background-color: blue

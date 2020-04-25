@@ -1,3 +1,13 @@
+body {
+	font-family: times new roman;
+	font-size: 105%;
+	text-align: justify;
+	position:relative;
+	left:15px;
+	top:15px;
+	bottom:20px;
+	width:1800px;
+}
 #hover:hover {
 	background-color: blue
 }
@@ -26,4 +36,11 @@ h2 {
 #peditable {
 	color: blue;
 	font-style: italic;
+}
+#buit{
+	height:75px;
+}
+#botoadalt{
+	position:relative;
+	top:10px;
 }

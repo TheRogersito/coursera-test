@@ -21,6 +21,12 @@
 			<li><a href="#images">Imatges</a></li>
 			<li><a href="#cssedit">Paràgraf editable</a></li>
 			<li><a href="#csssele">Modes de seleccio del css</a></li>
+			<li><a href="#pseudoclasses">Pseudoclasses</a></li>
+			<li><a href="#metestil">Mètodes d'estil</a></li>
+			<li><a href="#conflictes">Resolució de conflictes css</a></li>
+			<li><a href="#atributs">Atributs del css</a></li>
+			<li><a href="#caixes">Caixes</a></li>
+			<li><a href="#backg">Background</a></li>
 			<li><a href="#fotos">Fotos</a></li>
 		</ol>
 	<h2 id="puja">Comandes per a pujar la web i altres</h2>
@@ -106,7 +112,7 @@
 			</li>
 		</ul>
 	</div>
-	<h2>Pseudoclasses</h2>
+	<h2 id="pseudoclasses">Pseudoclasses</h2>
 	<ul>
 		<li>:link : aplicarà l'estil als links no visitats</li>
 		<li>:visited : aplica l'estil als links ja visitats</li>
@@ -114,7 +120,7 @@
 		<li id="active">:active : aplica l'estil quan el ratoli l'esta clicant a sobre, prova a clicar a aquesta frase</li>
 		<li>:nth-child():aplica l'estil segons el que es posi entre parentesi(4, odd, 15). Es pot combinar amb les altres pseudoclasses</li>
 	</ul>
-	<h2>Mètodes d'estil</h2>
+	<h2 id="metestil">Mètodes d'estil</h2>
 	<dir>Hi ha tres maneres d'aplicar el css en un document html:
 		<ul>
 			<li>Arxiu extern: Creant un link a l'arxiu extern css amb les instruccions dins l'eleent head de la següent manera: link rel="stylesheet" type="text/css" href="nomdelarxiu.css"</li>
@@ -122,7 +128,7 @@
 			<li>Dins de l'element: Posem la norma css dins de l'element. No haurem de posar target al css perque aplicarà la norma a l'element, pero per a aplicar-ho a altres hem de copiar i enganxar-ho tot. Exemple d'escriptura: p style="text-align:center;"</li>
 		</ul>
 	</dir>
-	<h2>Resolució de conflictes css</h2>
+	<h2 id="conflictes">Resolució de conflictes css</h2>
 	<div style="color:blue">Per a resoldre conflictes en css, és a dir normes d'aplicació contradictories hi ha diferents maneres d'acabar amb els problemes
 		<ul>
 			<li style="font-family: Arial">Origen: és una norma molt simple, guanyarà la norma de més a vall ja que el navegador llegeix els arxius de dalt a abaix. Si les propietats no són contradictòries però apunten al mateix element, les normes es fusionen. Un exemple molt fàcil és veure que tot el text té un tipus de lletra menys aquesta part que té marcada una font diferent</li>
@@ -138,7 +144,7 @@
 			<li></li>
 		</ul>
 	</div>
-	<h2>Atributs del css</h2>
+	<h2 id="atributs">Atributs del css</h2>
 	<div>
 		<ul>
 			<li>Text:
@@ -152,6 +158,37 @@
 					<li>text-align: alineació del text</li>
 				</ul>
 			</li>
+		</ul>
+	</div>
+	<h2 id="caixes">Caixes</h2>
+	<div>Els elements d'un html són construits com a caixes a la pantalla, i aquestes caixes tenen diferents capes; per ordre de dins cap a fora, les capes tenen aquests noms:
+		<ol>
+			<li>Content: és on està el contingut</li>
+			<li>Padding</li>
+			<li>Border</li>
+			<li>Margin</li>
+		</ol>
+		Les tres últimes capes poden modificar-se amb el css amb la propietat del seu mateix nom(per exemple: padding: 10px 10px 10px 10px;). L'ordre del píxels vol dir: superior, dreta, inferior, esquerra. També podem definir el seu color en el css en el cas del border, els altres no. Si definim un width a la caixa, aquest serà el width que ocuparà el seu contingut. No obstant hi ha una instrucció que permet combinar les amplades i que el width defineixi l'amplada absoluta de la caixa, és l'ordre <span id="box-sizing">box-sizing: order-box;</span>
+		<div>Per a aplicar l'ordre <span id="box-sizing">box-sizing: order-box;</span> hem, de posar-la dins de l'element * al css, que significa que s'aplicarà a tots els elements sense excepció, així que també podem sobreescriure el que el navegador ens aplica per defecte</div>
+		<div class="marges">Marges acomulatius: en cas que dues caixes estiguin juntes, els seus margin actuaràn de diferent manera si estàn junts d'esquerra a dreta o de dalt i a baix. Si estàn l'un al costat de l'altre els seus margin se sumaràn i entre els seus bprder hi haurà una distància  de margin+margin. No obstant, si estàn un a sobre de l'altre, la distància entre borders serà la del margin més gran</div>
+		<div class="marges">Contingut fora de caixa: quan una caixa és massa petita pel contingut que té a dins, hi ha la propietat css overflow, que té diferents opcions:
+			<ul>
+				<li>Visible: el contingut sobrant sortirà de la caixa per a ser totalment visible</li>
+				<li>Hidden: el contingut sobrant quedarà amagat dins de la caixa</li>
+				<li>Auto: posarà una scrollbar per a que el contingut quedi dins la caixa però l'usuari pugui veure-ho</li>
+				<li>Scroll: mostrarà dues scrollbars encara que el contingut no sobri horitzontalment</li>
+			</ul>
+		</div>
+	</div>
+	<div id="caixaprova">Aquesta caixa és per a provar l'efectivitat de les capes de la caixa</div>
+	<h2 id="backg">Background</h2>
+	<div>Es pot aplicar el fons de diferents maneres:
+		<ul>
+			<li>background-color: el fons serà un color, pot ser escrit en hexadecimal</li>
+			<li>background-image: el fons serà una imatge. Per a aplicar la imatge s'ha d'escriure així: background-image: url("nomdelaimatge.png")</li>
+			<li>background-repeat: podem fer que el fons es repeteixi de diverses maneres</li>
+			<li>background-position: decidim on estarà posicionat el fons</li>
+			<li>background: podem decidir les característiques de les propietats anteriors de cop, però si hi ha alguna anterior present aquesta anterior no tindrà efecte</li>
 		</ul>
 	</div>
 	<h2 id="fotos">Fotos:</h2>

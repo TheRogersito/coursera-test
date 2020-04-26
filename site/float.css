@@ -1,0 +1,22 @@
+*{
+	box-sizing: border-box;
+}
+div{
+	background-color: green;
+	height: 500px;
+}
+.dins{
+	border: 1px solid black;
+	width:33.33%;
+	padding:10px;
+	float: left;
+}
+#caixa1{
+	background-color: lightblue;
+}
+#caixa2{
+	background-color: lightyellow;
+}
+#caixa3{
+	background-color: lightgray;
+}

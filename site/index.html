@@ -10,25 +10,35 @@
 	<nav>L'element nav està per a dirigir-se a diferents seccions de la plana</nav>
 <h1>Títol de la pàgina, obligatori</h1>
 	<h2>Índex</h2>
-		<ol class="boto">
+		<ul class="boto">
 			<li><a href="#puja">Comandes per a pujar la web i altres</a></li>
-			<li><a href="#marcats">Marcats de noves linees</a></li>
-			<li><a href="#subtitols">Subtítols</a></li>
-			<li><a href="#diferents">Elements diferents</a></li>
-			<li><a href="#llista">Llista</a></li>
-			<li><a href="#llenguatge">Llenguatge html a la plana</a></li>
-			<li><a href="#links">Links</a></li>
-			<li><a href="#images">Imatges</a></li>
-			<li><a href="#cssedit">Paràgraf editable</a></li>
-			<li><a href="#csssele">Modes de seleccio del css</a></li>
-			<li><a href="#pseudoclasses">Pseudoclasses</a></li>
-			<li><a href="#metestil">Mètodes d'estil</a></li>
-			<li><a href="#conflictes">Resolució de conflictes css</a></li>
-			<li><a href="#atributs">Atributs del css</a></li>
-			<li><a href="#caixes">Caixes</a></li>
-			<li><a href="#backg">Background</a></li>
+			<li><a href="#teoriahtml">Part HTML</a>
+				<ol>
+					<li><a href="#marcats">Marcats de noves linees</a></li>
+					<li><a href="#subtitols">Subtítols</a></li>
+					<li><a href="#diferents">Elements diferents</a></li>
+					<li><a href="#llista">Llista</a></li>
+					<li><a href="#llenguatge">Llenguatge html a la plana</a></li>
+					<li><a href="#links">Links</a></li>
+					<li><a href="#images">Imatges</a></li>
+				</ol>
+			</li>
+			<li><a href="#teoriacss">Part CSS</a>
+				<ol>
+					<li><a href="#cssedit">Paràgraf editable</a></li>
+					<li><a href="#csssele">Modes de seleccio del css</a></li>
+					<li><a href="#pseudoclasses">Pseudoclasses</a></li>
+					<li><a href="#metestil">Mètodes d'estil</a></li>
+					<li><a href="#conflictes">Resolució de conflictes css</a></li>
+					<li><a href="#atributs">Atributs del css</a></li>
+					<li><a href="#caixes">Caixes</a></li>
+					<li><a href="#backg">Background</a></li>
+					<li><a href="#floating">Posicionat per floating</a></li>
+					<li><a href="#static">Posicionat estàtic</a></li>
+				</ol>
+			</li>
 			<li><a href="#fotos">Fotos</a></li>
-		</ol>
+		</ul>
 	<h2 id="puja">Comandes per a pujar la web i altres</h2>
 		<div><ul>
 				<li>Git
@@ -41,6 +51,7 @@
 				<li><a href="https://validator.w3.org/nu/#textarea" target="_blank">Per a validar la web fer click aquí</a></li>
 			</ul>
 		</div>
+	<h2 id="teoriahtml" class="important">Part HTML</h2>
 	<h2 id="marcats">Marcats de noves linees</h2>
 		<div>aquest marca nova linea</div>
 		<span>aquest no marca linea</span>
@@ -87,6 +98,7 @@
 			<div><img src="https://i1.theportalwiki.net/img/thumb/0/0a/Portal_Cake.png/200px-Portal_Cake.png" alt="cake"></div>
 		També és casi obligat posar un alt que defineixi la foto, i un height(altura) i un width(amplada) per a establir el tamany
 	</div>
+	<h2 id="teoriacss" class="important">Part CSS</h2>
 	<h2 id="cssedit">Paràgraf editable</h2>
 	<div>
 		<div class="boto"><a href=cssplay.html target="_blank">Experiments amb css</a></div>
@@ -190,7 +202,18 @@
 			<li>background: podem decidir les característiques de les propietats anteriors de cop, però si hi ha alguna anterior present aquesta anterior no tindrà efecte</li>
 		</ul>
 	</div>
-	<h2 id="fotos">Fotos:</h2>
+	<h2 id="floating">Posicionat per floating</h2>
+	<div class="marges">Per a posicionar elements a la pantalla, normalment es fa servir l'ordre "float" que posiciona les caixes dins d'un element. Quan s'aplica el "float", l'element afectat ignorarà el tamany de la caixa que el conté, així que en ocasions aquesta caixa podria fer-e més petita</div>
+	<div class="marges">Després hi ha l'ordre "clear" que fa que la caixa amb aquesta ordre es posi a sota de l'element més baix de la caixa, segons s'hagi especificat, mirant a la dreta, a l'esquerra o als dos costats alhora</div>
+	<div class="boto" style="margin-top:20px"><a href=float.html target="_blank">Experiments amb floats</a></div>
+	<h2 id="static">Posicionat estàtic</h2>
+	<div>Per defecte, tots els elements del html tenen posicionat estàtic, però hi ha altres dues manesres de posicioonar els elements:
+		<ul>
+			<li>Posicionat relatiu: L'element es posiciona relatiu a la seva posició. Sol guiar-se per 4 posicions: top, bottom, left, right. Quan es posiciona l'element així, no queda fora del posicionament normal del document. En altres paraules, quan mous la caixa amb posició relativa, a la seva posició original quedarà la seva hitbox però el contingut quedarà mogut on ha sigut marcat</li>
+			<li>Posicionat absolut: l'element es mou sencer quan es marca una nova posició, queda fora del posicionament normal del document. Mentre que en el posicionament relatiu la hitbox queda al seu lloc original, en el posicionament absolut la hitbox del element es mou amb ell. No obstant, el seu posicionament absolut quedarà relacionat al parent més proper amb posició absoluta o relativa</li>
+		</ul>
+	</div>
+		<h2 id="fotos">Fotos:</h2>
 		<a href="https://www.instagram.com/therogersito/?hl=es" target="_blank"><img src="fotocuqui.PNG" height="300" width="300" alt="insta Roger"></a>
 		<a href="https://www.instagram.com/cclaudiatinamentee/?hl=es" target="_blank"><img src="claudia.PNG" height="300" width="300" alt="insta Claudia"></a>
 	<div class="boto" id="botoadalt"><a href="#top">Per tornar a dalt de tot fes click aquí</a></div>

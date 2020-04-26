@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>El que surt de nom a la pestanya</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -35,6 +36,7 @@
 					<li><a href="#backg">Background</a></li>
 					<li><a href="#floating">Posicionat per floating</a></li>
 					<li><a href="#static">Posicionat estàtic</a></li>
+					<li><a href="#media">Media queries</a></li>
 				</ol>
 			</li>
 			<li><a href="#fotos">Fotos</a></li>
@@ -213,6 +215,8 @@
 			<li>Posicionat absolut: l'element es mou sencer quan es marca una nova posició, queda fora del posicionament normal del document. Mentre que en el posicionament relatiu la hitbox queda al seu lloc original, en el posicionament absolut la hitbox del element es mou amb ell. No obstant, el seu posicionament absolut quedarà relacionat al parent més proper amb posició absoluta o relativa</li>
 		</ul>
 	</div>
+	<h2 id="media">Media queries</h2>
+	<div>Els media queries serveixen per a aplicar el css de dins en cas que es compleixi una condició, si no es compleix ignorarà les propietats de css de dins. Exemple: @media (max-width: 800px){p{}}. Els media queries es poden combinar posant un and entre les condicions, una coma(,) que vindria a representar un OR. Els media queries solen anar després de posar el css comú per a tots els dispositius. En cas de posar més d'un media querie, no s'han d'overlapejar. Per a que un dispositiu mòbil no ens toqui els pebrots, hem de posar aquest meta dins de head: &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</div>
 		<h2 id="fotos">Fotos:</h2>
 		<a href="https://www.instagram.com/therogersito/?hl=es" target="_blank"><img src="fotocuqui.PNG" height="300" width="300" alt="insta Roger"></a>
 		<a href="https://www.instagram.com/cclaudiatinamentee/?hl=es" target="_blank"><img src="claudia.PNG" height="300" width="300" alt="insta Claudia"></a>

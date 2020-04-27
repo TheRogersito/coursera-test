@@ -1,3 +1,6 @@
+html{
+	font-size:18px;
+}
 *{
 	box-sizing: border-box;
 }
@@ -10,23 +13,6 @@ div{
 .dins{
 	border: 1px solid black;
 }
-@media (min-width: 992px){
-.dins{
-	width:25%;
-	padding:10px;
-	float: left;
-}
-}
-@media (max-width: 991px) and (min-width: 700px){
-.dins{
-	width:50%;
-	padding:10px;
-	float: left;
-}
-#caixa3{
-	clear:left;
-}
-}
 #caixa1{
 	background-color: lightblue;
 }
@@ -38,4 +24,13 @@ div{
 }
 #caixa4{
 	background-color: orange;
+}
+#caixa5{
+	background-color: pink;
+}
+#caixa6{
+	background-color: green;
+}
+#caixa7{
+	background-color: yellow;
 }

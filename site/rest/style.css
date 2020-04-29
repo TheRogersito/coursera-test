@@ -4,3 +4,37 @@ body{
 	background-color: #5F00BA;
 	font-family: Helvetica;
 }
+#header-nav{
+	background-color: #538900;
+	border: 0;
+	height: 90px;
+}
+#logo-img{
+	background: url('imatges/logo_gran.jpg') no-repeat;
+	width:186px;
+	height:52px;
+	margin: 10px 15px 10px 0;
+}
+.navbar-brand h1{
+	font-family: Source Sans Pro;
+	color: #3B0092;
+	text-shadow: 1px 1px 1px;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-size:2em;
+	text-transform: uppercase;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-brand p{
+	margin-top:5px;
+	color:#5F00BA;
+}
+#estrella{
+	height: 25px;
+	width: 25;
+}
+.navbar-brand p span{
+	vertical-align:middle;
+}

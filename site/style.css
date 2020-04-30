@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 }
 body {
+	background-color: lightgreen;
 	font-family: times new roman;
 	font-size:180%;
 	text-align: justify;
@@ -61,4 +62,7 @@ h2 {
 }
 .important{
 	font-size:36px;
+}
+.imp{
+	font-weight: bold;
 }

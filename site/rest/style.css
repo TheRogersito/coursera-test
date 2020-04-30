@@ -4,10 +4,12 @@ body{
 	background-color: #5F00BA;
 	font-family: Helvetica;
 }
+
+/** HEADER **/
 #header-nav{
 	background-color: #538900;
+	border-radius: 0;
 	border: 0;
-	height: 90px;
 }
 #logo-img{
 	background: url('imatges/logo_gran.jpg') no-repeat;
@@ -15,26 +17,63 @@ body{
 	height:52px;
 	margin: 10px 15px 10px 0;
 }
-.navbar-brand h1{
-	font-family: Source Sans Pro;
-	color: #3B0092;
-	text-shadow: 1px 1px 1px;
-	margin-top:0px;
-	margin-bottom:0px;
-	font-size:2em;
-	text-transform: uppercase;
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Source Sans pro', serif;
+  color: #3B0092;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus{
 	text-decoration: none;
 }
 .navbar-brand p{
-	margin-top:5px;
+	margin-top:15px;
 	color:#5F00BA;
 }
 #estrella{
 	height: 25px;
-	width: 25;
+	width: 25px;
 }
 .navbar-brand p span{
 	vertical-align:middle;
+}
+#nav-list{
+	margin-top:10px;
+}
+#nav-list a{
+	color: #5F00BA;
+	text-align:center;
+}
+#nav-list a:hover{
+	background-color: green;
+}
+#nav-list a span{
+	font-size: 1em;
+}
+#phone {
+	margin-top:5px;
+}
+#phone a {
+	text-align: right;
+	padding-bottom:0;
+}
+@media (max-width: 1320px) and (min-width: 845px){
+#collapsable-nav{
+	font-size:10px;
+}
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #5F00BA;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
 }

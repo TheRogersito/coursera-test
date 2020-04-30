@@ -65,15 +65,43 @@ body{
 	text-align: right;
 	padding-bottom:0;
 }
-@media (max-width: 1320px) and (min-width: 845px){
-#collapsable-nav{
-	font-size:10px;
-}
-}
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #5F00BA;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -30px;
+}
+@media (min-width: 1200px){
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+#collapsable-nav{
+	font-size:1vw;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+#collapsable-nav{
+	font-size:10px;
+}
+}
+@media (max-width: 767px){
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p {
+    font-size: 2.5vw;
+    margin-top: 12px;
+  }
+  #collapsable-nav{
+  	font-size:3vw;
+  }
+  #collapsable-nav a span{
+  	margin-right: 5px;
+  }
 }

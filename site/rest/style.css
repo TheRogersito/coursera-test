@@ -10,6 +10,7 @@ body{
 	background-color: #538900;
 	border-radius: 0;
 	border: 0;
+	height:90px;
 }
 #logo-img{
 	background: url('imatges/logo_gran.jpg') no-repeat;
@@ -72,17 +73,77 @@ body{
   clear: both;
   margin-top: -30px;
 }
+#terrassa{
+	width:95%;
+	margin: 10px 15px 10px 0;
+	padding:0;
+}
+#entrepans, #especials, #aperitius{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position:relative;
+	border: 2px solid blue;
+	overflow: hidden;
+}
+#entrepans:hover, #especials:hover, #aperitius:hover{
+	box-shadow: 0 1px 5px 1px black;
+}
+#entrepans{
+	background: url("imatges/bocata.jpg") no-repeat;
+	background-size: cover;
+}
+#especials{
+	background: url("imatges/aletes.jpg") no-repeat;
+	background-size: cover;
+}
+#aperitius{
+	background: url("imatges/patates.jpg") no-repeat;
+	background-size: cover;
+}
+#entrepans span, #especials span, #aperitius span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: capitalize;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
 @media (min-width: 1200px){
-
+.jumbotron{
+	background: url('imatges/dins.jpg') no-repeat;
+	background-size: cover;
+	height: 600px;
+	width:90%;
+	margin-right: auto;
+	margin-left: auto;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px){
 #collapsable-nav{
 	font-size:1.2vw;
 }
+.jumbotron{
+	background: url('imatges/dins.jpg') no-repeat;
+	background-size: cover;
+	height: 500px;
+	width:90%;
+	margin-right: auto;
+	margin-left: auto;
+}
 }
 @media (min-width: 768px) and (max-width: 991px){
 #collapsable-nav{
 	font-size:1.2vw;
+}
+.jumbotron{
+	background: url('imatges/dins.jpg') no-repeat;
+	background-size: cover;
+	height: 600px;
 }
 }
 @media (max-width: 767px){
@@ -104,4 +165,8 @@ body{
   #collapsable-nav a span{
   	margin-right: 5px;
   }
+  .container .jumbotron{
+	height: 400px;
+	padding:0;
+}
 }

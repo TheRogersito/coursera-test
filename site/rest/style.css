@@ -113,6 +113,32 @@ body{
   color: #fff;
   opacity: .8;
 }
+.panel-footer{
+	background-color: #353535;
+	border: 0;
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.panel-footer section{
+	text-align: justify-all;
+}
+.panel-footer section span{
+	font-size: 1.2em;
+}
+#hours, #address{
+	line-height: 2;
+}
+#address p{
+	color: green;
+	font-size: .8em;
+}
+#testimonials{
+	font-style: italic;
+}
+.panel-footer div.text-center{
+	margin-top: 35px;
+}
 @media (min-width: 1200px){
 .jumbotron{
 	background: url('imatges/dins.jpg') no-repeat;
@@ -128,7 +154,7 @@ body{
 	font-size:1.2vw;
 }
 .jumbotron{
-	background: url('imatges/dins.jpg') no-repeat;
+	background: url('imatges/dins.jpg');
 	background-size: cover;
 	height: 500px;
 	width:90%;
@@ -166,7 +192,25 @@ body{
   	margin-right: 5px;
   }
   .container .jumbotron{
-	height: 400px;
+  	background-color: #5F00BA;
 	padding:0;
+}
+.jumbotron{
+	margin-bottom: 20px;
+	max-height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+}
+#foto-dins{
+	max-height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.panel-footer{
+	text-align: center;
+}
+.panel-footer hr{
+	width: 50%;
 }
 }

@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: lightgreen;
+	background: url(back.jpg);
 	font-family: times new roman;
 	font-size:180%;
 	text-align: justify;
@@ -65,4 +65,9 @@ h2 {
 }
 .imp{
 	font-weight: bold;
+}
+@media (max-width: 767px){
+.boto li a{
+	width: 250px;
+}
 }

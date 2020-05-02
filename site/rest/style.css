@@ -19,6 +19,7 @@ body{
 }
 .navbar-brand {
   padding-top: 25px;
+  border-color: #5F00BA;
 }
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Source Sans pro', serif;
@@ -75,6 +76,15 @@ body{
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	background-color: green
 }
+#call-btn > a{
+	font-size:1.2em;
+	display: block;
+	background-color: #538900;
+	margin: 0 20px;
+	border: 1px solid black;
+	padding-left: 10px;
+	text-align: center;
+	color:#5F00BA;
 }
 #terrassa{
 	width:95%;
@@ -157,6 +167,23 @@ body{
 }
 .item-sencer{
 	margin-top:15px;
+}
+.titol-item{
+	text-decoration: underline;
+	text-align: center;
+}
+.desc-item{
+	font-style: italic;
+}
+.ingredients{
+	font-size: .8em;
+}
+.preu-item{
+	margin-top:10px;
+	clear:left;
+}
+.hr-entrepans{
+	width:65%;
 }
 .panel-footer{
 	background-color: #353535;
@@ -250,6 +277,7 @@ body{
 	padding:0;
 }
 .jumbotron{
+	margin-top: 15px;
 	margin-bottom: 20px;
 	max-height: 400px;
 	margin-right: auto;

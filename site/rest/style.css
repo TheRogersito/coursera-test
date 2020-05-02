@@ -72,24 +72,31 @@ body{
   clear: both;
   margin-top: -30px;
 }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: green
+}
+}
 #terrassa{
 	width:95%;
 	margin: 10px 15px 10px 0;
 	padding:0;
 }
-#entrepans, #especials, #aperitius{
+.categoria{
 	height: 250px;
-	width: 100%;
-	margin-bottom: 15px;
+	max-width: 90%;
+	margin-bottom: 30px;
 	position:relative;
-	border: 2px solid blue;
+	border: 2px solid lightgray;
 	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+
 }
-#entrepans:hover, #especials:hover, #aperitius:hover{
+.categoria:hover{
 	box-shadow: 0 1px 5px 1px black;
 }
-#entrepans{
-	background: url("imatges/bocata.jpg") no-repeat;
+#entrepansc{
+	background: url("imatges/frank.jpg") no-repeat;
 	background-size: cover;
 }
 #especials{
@@ -100,7 +107,43 @@ body{
 	background: url("imatges/patates.jpg") no-repeat;
 	background-size: cover;
 }
-#entrepans span, #especials span, #aperitius span {
+#hamb{
+	background: url("imatges/hamb.jpg") no-repeat;
+	background-size: cover;
+}
+#entrepansf{
+	background: url("imatges/bocata.jpg") no-repeat;
+	background-size: cover;
+}
+#pizza{
+	background: url("imatges/pizza.jpg") no-repeat;
+	background-size: cover;
+}
+#combi{
+	background: url("imatges/combi.jpg") no-repeat;
+	background-size: cover;
+}
+#beguda{
+	background: url("imatges/beguda.jpg") no-repeat;
+	background-size: cover;
+}
+#gelats{
+	background: url("imatges/gelats.jpg") no-repeat;
+	background-size: cover;
+}
+#cafes{
+	background: url("imatges/cafes.jpg") no-repeat;
+	background-size: cover;
+}
+#carns{
+	background: url("imatges/carns.jpg") no-repeat;
+	background-size: cover;
+}
+#coctel{
+	background: url("imatges/coctel.jpg") no-repeat;
+	background-size: cover;
+}
+.categoria span {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -111,6 +154,9 @@ body{
   background-color: #000;
   color: #fff;
   opacity: .8;
+}
+.item-sencer{
+	margin-top:15px;
 }
 .panel-footer{
 	background-color: #353535;
@@ -220,5 +266,11 @@ body{
 }
 .panel-footer hr{
 	width: 50%;
+}
+.foto-item{
+	width:40%;
+	float:left;
+	margin-left:5px;
+	margin-right:20px;
 }
 }

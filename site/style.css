@@ -67,7 +67,8 @@ h2 {
 	font-weight: bold;
 }
 @media (max-width: 767px){
-.boto li a{
-	width: 250px;
+.boto a:link, .boto a:visited {
+	display: block;
+	width: 300px;
 }
 }

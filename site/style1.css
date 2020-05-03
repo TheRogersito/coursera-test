@@ -1,0 +1,14 @@
+body {
+	background: url(felicitats.jpg);
+}
+#foto{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+@media (max-width: 767px){
+#foto1{
+	width:50%;
+}
+}

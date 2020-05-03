@@ -1,0 +1,180 @@
+body{
+	font-size: 16px;
+	color: white;
+	background-color: #5F00BA;
+	font-family: Helvetica;
+}
+#header-nav{
+	background-color: #538900;
+	border-radius: 0;
+	border: 0;
+	clear:both;
+}
+#desplegable{
+	float:right;
+	margin-top: -60px;
+}
+.navbar-brand {
+  padding-top: 25px;
+  border-color: #5F00BA;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Source Sans pro', serif;
+  color: #3B0092;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-brand p{
+	margin-top:15px;
+	color:#5F00BA;
+}
+.navbar-brand p span{
+	vertical-align:middle;
+}
+#nav-list{
+	margin-top:10px;
+}
+#nav-list a{
+	color: #5F00BA;
+	text-align:center;
+}
+#nav-list a:hover{
+	background-color: green;
+}
+#nav-list a span{
+	font-size: 1em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #5F00BA;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: green
+}
+#ourmenu{
+	margin-bottom: 20px;
+}
+h2{
+	text-align: center;
+}
+.categoria{
+	background-color: gray;
+	border: 1px solid black;
+	margin-bottom: 35px;
+	position: relative;
+	float: left;
+	padding:15px;
+}
+@media (min-width: 1200px){
+#header-nav{
+	height: 90px;
+}
+.jumbotron{
+	background: url('imatges/dins.jpg') no-repeat;
+	background-size: cover;
+	height: 600px;
+	width:90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+div.categoria{
+	width:30%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+#header-nav{
+	height: 90px;
+}
+#collapsable-nav{
+	font-size:1.2vw;
+}
+div.categoria{
+	width:45%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+#sushi{
+	width:95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+#header-nav{
+	height: 90px;
+}
+#collapsable-nav{
+	font-size:1.2vw;
+}
+.jumbotron{
+	background: url('imatges/dins.jpg') no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+}
+@media (max-width: 767px){
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p {
+    font-size: 2.5vw;
+    margin-top: 12px;
+  }
+  #collapsable-nav{
+  	font-size:3vw;
+  }
+  #collapsable-nav a span{
+  	margin-right: 5px;
+  }
+  .container .jumbotron{
+  	background-color: #5F00BA;
+	padding:0;
+}
+.jumbotron{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	max-height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+}
+#foto-dins{
+	max-height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.panel-footer{
+	text-align: center;
+}
+.panel-footer hr{
+	width: 50%;
+}
+.foto-item{
+	width:40%;
+	float:left;
+	margin-left:5px;
+	margin-right:20px;
+}
+.categoria{
+	margin-left: 13%;
+	margin-right: 13%;
+}
+}

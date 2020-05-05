@@ -66,6 +66,18 @@ h2 {
 .imp{
 	font-weight: bold;
 }
+.blau{
+	color:blue;
+}
+.verd{
+	color:green;
+}
+.lila{
+	color:purple;
+}
+.vermell{
+	color:red;
+}
 @media (max-width: 767px){
 .boto a:link, .boto a:visited {
 	display: block;

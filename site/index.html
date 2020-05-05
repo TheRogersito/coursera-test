@@ -42,6 +42,13 @@
 					<li><a href="#bootstra">Bootstrap</a></li>
 				</ol>
 			</li>
+			<li><a href="#javascript">Part Javascript</a>
+				<ol>
+					<li><a href="#variables">Variables i Funcions Simples</a></li>
+					<li><a href="#types">Types</a></li>
+					<li><a href="#tipics">Estructures típiques</a></li>
+				</ol>
+			</li>
 			<li><a href="#fotos">Fotos</a></li>
 		</ul>
 		<div class="boto" style="margin-top:20px"><a href=../module2-solution/index.html target="_blank">Examen setmana 2</a></div>
@@ -226,6 +233,88 @@
 	<h2 id="bootstra">Bootstrap</h2>
 	<div>Bootstrap és una eina que es fa servir per a fer servir les columnes d'una web de manera més senzilla(tot i que personalment prefereixo moure el cul solet). Canvia quasi totalment l'estil de les webs, pero dóna l'opció de muntar-te columnes seguint una sèrie de class. Aquestes class tenen la següent sintaxi: "col-tamany del dispusitiu-nombre de columnes llògiques a ocupar/12". Un exemple seria la class "col-md-4", que seria per a dispositius mitjans i ocuparia 4/12 de la pàgina. En el següent botó està una versió dels experiments amb floats pero fet amb el bootstrap:</div>
 	<div class="boto" style="margin-top:20px"><a href=float-bootstrap.html target="_blank">Experiments amb floats - Bootstrap</a></div>
+	<h2 id="javascript" class="important"> Part Javascript</h2>
+	<div class="boto" style="margin-top:20px"><a href=expjavascript.html target="_blank">Experiments amb Javascript</a></div>
+	<div>Les comandes javascript es poden aplicar de diferents maneres
+		<ul>
+			<li>Al mateix document html: Posant les comandes dins d'un element script i aquest element script dins de l'element head o body</li>
+			<li>Document extern: posant les comandes a un fitxer .js i creant l'element script com en el cas anterior però especificant el src</li>
+		</ul>
+	Hi poden haver més d'un element script dins d'un head o body, s'ha de tenir en compte que les comandes s'exxecutaràn de dalt a baix</div>
+	<h2 id="variables">Variables i Funcions Simples</h2>
+	<div>Les variables es defineixen de la següent manera: <span class="blau">var</span> <span class="verd">x</span> <span class="vermell">=</span> <span class="lila">valor</span>;
+		<ul>
+			<li><span class="blau">var</span>: és el comandament que defineix la x com a variable. Sempre és var</li>
+			<li><span class="verd">x</span>: és el nom de la variable, pot ser x o qualsevol cosa</li>
+			<li><span class="vermell">=</span>: separa el nom de la variable del seu valor. Sempre és =</li>
+			<li><span class="lila">valor</span>: dóna un valor a la variable, pot ser numèric, text...</li>
+		</ul>
+	</div>
+	<div>Les funcions s'escriuen de la següent manera<span class="blau">function</span> <span class="verd">a</span> (<span class="verd">x</span>, <span class="verd">y</span>) {}
+		<ul>
+			<li><span class="blau">function</span>: és el comandament que defineix la funció. Sempre és function</li>
+			<li><span class="verd">a</span>: és el nom de la funció, pot ser a o qualsevol cosa</li>
+			<li><span class="verd">x, y</span>: Són els valors utilitzats en la funció. Han de ser nous, no poden ser definits amb anterioritat</li>
+			<li>{}: Conté les comandes que s'executaràn quan s'invoqui la funció</li>
+		</ul>
+	La funció no s'executarà si no és invocada. Exemples d'invocar funció:
+		<ul>
+			<li>var a = f1(4,5);</li>
+			<li>f1(4, "a")</li>
+			<li>f1();</li>
+		</ul>
+	Si es defineixen valors o funcions dins de funcions, els valors i funcions de dins seràn vàlids només dins de la funció de la que formen part. No obstant si són definits de manera global, és a dir, fora de funcions, seràn vàlids a tot arreu
+	</div>
+	<h2 id="types">Types</h2>
+	<div>Els types a javascript són les maneres de definir valors(crec)
+		<ul>
+			<li>Objectes: els objectes a javascript són un conjunt d'un nom i el seu valor, per exemple x=1 x és el nom 1 és el valor i els dos junts fan l'objecte. Hi ha dos tipus de types</li>
+			<li>Primitius: tenen un o més valors predefinits i no poden sortir d'allà. N'hi ha de sis tiups
+				<ul>
+					<li>Boolean: només té dos valors: true i false</li>
+					<li>Undefined: és el valor que té un valor no definit</li>
+					<li>Null: fa que una variable tingui un valor nul, que és una versió legal del undefined</li>
+					<li>Number: fa que un valor sigui numèric(si no llegeix com a text)</li>
+					<li>String: és la seqüència de caràcters utilitzats per a representar text</li>
+					<li>Symbol: el professor ha dit que no el farem servir perquè és algo molt nou. Gràcies crack</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<h2 id="tipics">Estructures típiques</h2>
+	<div>A Javascript hi ha un conjunt d'estructures que són les més utilitzades. Són aquestes</div>
+	<table class="egt">
+		<tr>
+		<td>En el primer exemple veiem una variable string que va canviant de valor a mida que baixa el codi(primer és "Hello" i després "Hello World"). Quan es posa el símbol += significa que el valor se sumarà al " World" i símbol canviarà al nou valor sumat</td>
+		<td><img src="imgjs/1.PNG" alt="fotojs"></td>
+		</tr>
+		<tr>
+		<td>Al Javascript s'apliquen les normes matemàtiques de prioritat(Parèntesi, potència, multiplicació, suma). Quan es fan mates amb operadors no numèrics, el resultat serà un NaN(Not a Number)</td>
+		<td><img src="imgjs/2.PNG" alt="fotojs"></td>
+		</tr>
+		<tr>
+		<td>En les normes d'equitat, per a comparar dos números s'han de posar dos =(==) per què un = el que fa és sobreescriure un valor. En el cas dels dos == si un valor "4" és text i se¡l compara amb un 4 numèric, el javascript canviarà el tipus de variable del "4" i dirà que són iguals</td>
+		<td><img src="imgjs/3.PNG" alt="fotojs"></td>
+		</tr>
+		<tr>
+		<td>En el cas dels 3 =(===) el javascript no canviarà el tipus del "4" per a comparar-lo amb el 4, sinò que serà una comparació més estricte i dirà que no són iguals ja que el "4" és text i el 4 és número</td>
+		<td><img src="imgjs/4.PNG" alt="fotojs"></td>
+		</tr>
+		<tr>
+		<td>En aquest cas veiem què veu el javascript com a fals i com a verdader per defecte. En la imatge podem veure tot el que considera fals i exemples del que considera verdader</td>
+		<td><img src="imgjs/5.PNG" alt="fotojs"></td>
+		</tr>
+		<tr>
+		<td>En aquest exemple veiem com s'han d'aplicar els {}. Es veuen dues funcions similars, pero només és vàlida la b() per què quan el javascript no veu el { després de function o del return, posa automàticament un ;</td>
+		<td><img src="imgjs/6.PNG" alt="fotojs"></td>
+		</tr>
+		<tr>
+		<td>El comandament for serveix per a crear un loop S'escriu així: for (var variable del loop; condició fins la qual durarà el loop; si és incremental o descendent) {cos del loop}
+		<br>
+		A la foto, el loop que es veu tenim la variable sum és 0; A la comanda for tenim que el valor inicial de i és 0, que el loop es repetirà sempre que i sigui mé baix que 10 i que cada cop que el loop torni a començar el valor de i s'incrementarà en 1. A cada loop posem que es mostri en pantalla el valor de i per demostrar la seva evolució a través dels loops, així com el valor de sum. Podem veure el valor final del sum en un missatge a part. A la pàgina d'experiemnts de javascript es pot veure com va</td>
+		<td><img src="imgjs/7.PNG" alt="fotojs"></td>
+		</tr>
+		</table>
 	<h2 id="fotos">Fotos:</h2>
 		<a href="https://www.instagram.com/therogersito/?hl=es" target="_blank"><img src="fotocuqui.PNG" height="300" width="300" alt="insta Roger"></a>
 		<a href="https://www.instagram.com/cclaudiatinamentee/?hl=es" target="_blank"><img src="claudia.PNG" height="300" width="300" alt="insta Claudia"></a>

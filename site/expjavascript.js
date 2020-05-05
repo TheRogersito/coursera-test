@@ -99,4 +99,27 @@ function test(tros){
 	var tros = prompt("amb què vols el bocatacalamares?");
 	tros = tros || "absolutament res? tens el gust al cul?";
 	alert("D'aquí 4 anys i 23 minuts t'arribarà el bocatacalamares amb "+tros)
+};
+var dobjecte = {
+	nom: "Senyor",
+	cognom: "Imbecil",
+	fills: {
+		primer: "Doctor",
+		segon: "Plastic"
+	},
+};
+console.log(dobjecte);
+function decidir(){
+	var mul1 = prompt("Posa un número per multiplicar");
+	var mul2 = prompt("Posa un altre número per multiplicar");
+	var resultat = mul1*mul2
+	alert("El resultat és "+resultat)
+};
+function multi1(fac) {
+	var hey = function (foc){
+		return fac*foc
+	}
+	return hey
 }
+var fuc = multi1(4);
+console.log(fuc(15));

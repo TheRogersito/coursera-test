@@ -78,6 +78,13 @@ h2 {
 .vermell{
 	color:red;
 }
+table{
+	text-align: center;
+	margin-top: 20px;
+}
+td{
+	width: 50%;
+}
 @media (max-width: 767px){
 .boto a:link, .boto a:visited {
 	display: block;

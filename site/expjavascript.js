@@ -87,80 +87,115 @@
 
 
 // For loop
-var sum = 0;
-for (var i = 0; i < 10; i++) {
-  document.write(" valor i="+i);
-  sum = sum + i;
-  document.write(" valor sum="+sum);
+// var sum = 0;
+// for (var i = 0; i < 10; i++) {
+//   document.write(" valor i="+i);
+//   sum = sum + i;
+//   document.write(" valor sum="+sum);
+// }
+// document.write("sum of 0 through 9 is: " + sum);
+
+// function test(tros){
+// 	var tros = prompt("amb què vols el bocatacalamares?");
+// 	tros = tros || "absolutament res? tens el gust al cul?";
+// 	alert("D'aquí 4 anys i 23 minuts t'arribarà el bocatacalamares amb "+tros)
+// };
+// var dobjecte = {
+// 	nom: "Senyor",
+// 	cognom: "Imbecil",
+// 	fills: {
+// 		primer: "Doctor",
+// 		segon: "Plastic"
+// 	},
+// };
+// console.log(dobjecte);
+// function decidir(){
+// 	var mul1 = prompt("Posa un número per multiplicar");
+// 	var mul2 = prompt("Posa un altre número per multiplicar");
+// 	var resultat = mul1*mul2
+// 	alert("El resultat és "+resultat)
+// };
+// function multi1(fac) {
+// 	var hey = function (foc){
+// 		return fac*foc
+// 	}
+// 	return hey
+// }
+// var fuc = multi1(4);
+// console.log(fuc(15));
+
+// function cercle (radius) {
+//   this.radius = radius;
+// }
+// cercle.prototype.getArea = 
+//   function () {
+//     return Math.PI * Math.pow(this.radius, 2);
+//   };
+// var uncercle = new cercle(10);
+// console.log(uncercle.getArea());
+// var altrecercle = new cercle(20);
+// console.log(altrecercle);
+
+// var literalCircle = {
+//   radius: 10,
+
+//   getArea: function () {
+//     var self = this;
+//     console.log(this);
+
+//     var increaseRadius = function () {
+//       self.radius = 20;
+//     };
+//     increaseRadius();
+//     console.log(this.radius);
+
+//     return Math.PI * Math.pow(this.radius, 2);
+//   }
+// };
+// console.log(literalCircle.getArea());
+
+// function Dog(name) {
+//   this.name = name;
+// }
+
+// Dog.prototype.bark = function () {
+//   console.log(this.name + " likes barking! Bark!");
+// }
+
+// var max = new Dog("Max", "Buddy");
+// max.bark();
+
+var hola = new Array();
+hola[0] = "Subnormals";
+hola[1] = 14;
+hola[2] = function (pet){
+	console.log("M'agraden els "+pet)
 }
-document.write("sum of 0 through 9 is: " + sum);
+hola[3] = {colo: " caca de vaca"}
+console.log(hola)
+hola[2](hola[0])
+console.log(hola[3].colo)
 
-function test(tros){
-	var tros = prompt("amb què vols el bocatacalamares?");
-	tros = tros || "absolutament res? tens el gust al cul?";
-	alert("D'aquí 4 anys i 23 minuts t'arribarà el bocatacalamares amb "+tros)
-};
-var dobjecte = {
-	nom: "Senyor",
-	cognom: "Imbecil",
-	fills: {
-		primer: "Doctor",
-		segon: "Plastic"
-	},
-};
-console.log(dobjecte);
-function decidir(){
-	var mul1 = prompt("Posa un número per multiplicar");
-	var mul2 = prompt("Posa un altre número per multiplicar");
-	var resultat = mul1*mul2
-	alert("El resultat és "+resultat)
-};
-function multi1(fac) {
-	var hey = function (foc){
-		return fac*foc
-	}
-	return hey
+var coses = ["Doctor", "Eustaqui", "Arbre","Subnormal"]
+coses[10] = "Rata peluda"
+for (var i = 0; i < coses.length; i++) {
+	document.write("Treballo de "+coses[i]+"<br>")
 }
-var fuc = multi1(4);
-console.log(fuc(15));
-
-function cercle (radius) {
-  this.radius = radius;
+var cosa1 = ["Catifa", "Pantufla", "Senyor lleig"]
+cosa1[99] = "Rata peluda"
+for (var llista in cosa1){
+	document.write("Soc un/a "+cosa1[llista]+"<br>")
 }
-cercle.prototype.getArea = 
-  function () {
-    return Math.PI * Math.pow(this.radius, 2);
-  };
-var uncercle = new cercle(10);
-console.log(uncercle.getArea());
-var altrecercle = new cercle(20);
-console.log(altrecercle);
 
-var literalCircle = {
-  radius: 10,
-
-  getArea: function () {
-    var self = this;
-    console.log(this);
-
-    var increaseRadius = function () {
-      self.radius = 20;
-    };
-    increaseRadius();
-    console.log(this.radius);
-
-    return Math.PI * Math.pow(this.radius, 2);
+(function (window) {
+  var noi = {};
+  noi.name = "Cabrón";
+  var salu = "Hola ";
+  noi.sayHello = function () {
+    console.log(salu + noi.name);
   }
-};
-console.log(literalCircle.getArea());
 
-function Dog(name) {
-  this.name = name;
-}
+  window.noi = noi;
 
-Dog.prototype.bark = function () {
-  console.log(this.name + " likes barking! Bark!");
-}
-
-var max = new Dog("Max", "Buddy");
-max.bark();
+})(window);
+noi.sayHello();

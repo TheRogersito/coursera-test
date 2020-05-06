@@ -50,6 +50,8 @@
 					<li><a href="#objecte">Objectes dins d'objectes</a></li>
 					<li><a href="#copia">Còpia de variables</a></li>
 					<li><a href="#constructor">Constructor de funcions</a></li>
+					<li><a href="#array">Arrays</a></li>
+					<li><a href="#instant">Convocacions de funcions instantànies</a></li>
 				</ol>
 			</li>
 			<li><a href="#fotos">Fotos</a></li>
@@ -335,7 +337,7 @@
 		</ul>
 	</div>
 	<h2 id="constructor">Constructor de funcions</h2>
-	<div>Per començar hem de deixar clar que l'objecte this és un objecte especial que apunta al objecte window del navegador. Podem desar funcions com a variables simples fent serrvir la següent escriptura: var x = new y(z);. La <span class="blau">x</span> seria el nom de la variable, <span class="vermell">new</span>és necessari ja que es crea una nova instància de la funció, la <span class="verd">y</span> seria el nom de la funció ja creada i <span class="lila">z</span> és la variable dins de la funció. En el següent exemple podem veure com va la cosa:</div>
+	<div>Per començar hem de deixar clar que l'objecte this és un objecte especial que apunta al objecte window del navegador. Podem desar funcions com a variables simples fent serrvir la següent escriptura: var x = new y(z);. La <span class="blau">x</span> seria el nom de la variable, <span class="vermell">new</span> és necessari ja que es crea una nova instància de la funció, la <span class="verd">y</span> seria el nom de la funció ja creada i <span class="lila">z</span> és la variable dins de la funció. En el següent exemple podem veure com va la cosa:</div>
 	<table>
 		<tr>
 			<td>En aquesta imatge veiem per comenár la manera de desar una funció com a variable en dos ocasions: les línies que començen per <span class="blau">var</span>, que amb la funció respectiva vindrien a aplicar un valor per la variable <span class="taronja">this</span>.radius<br>
@@ -345,6 +347,24 @@
 		<tr>
 			<td>En el següent exemple, veiem que si cridem a l'objecte <span class="taronja">this</span> a dins d'un altre objecte cridarà a l'objecte arrel(en aquest cas literalCircle) enlloc de l'objecte window del navegador. No obstant si creem una funció dins d'una funció dins de l'objecte(no l'hem de fer de la maera habitual, ha de ser "Nomdefunció: function() {cos}") i cridem a l'objecte <span class="taronja">this</span> dins de la funció de més endins, cridarà al window del navegador. Per a que cridi al <span class="taronja">this</span> de l'objecte principal hem de crear el var self dins de la primera funció, que sigui equivalent al objecte <span class="taronja">this</span> i fer servir la variable self dins de la funció interior</td>
 			<td><img src="imgjs/10.PNG" alt="fotojs"></td>
+		</tr>
+	</table>
+	<h2 id="array">Arrays</h2>
+	<div>Els arrays al javascript són col·leccions d'objectes guardats en un de sol. Els arrays tenen diverses posicions on desar els objectes(array[0], array[1], array[2]...).Poden desar text, números, objectes absoluts, funcions... Per a crear-lo hi ha dos maneres de fer-ho</div>
+	<table>
+		<tr>
+			<td>A la primera part veiem com es crea un Array d'una manera poc pràctica amb el var hola, ja que per a definir cada valor de l'Array hem d'escriure hola[elnumeroquesigui] = cada cop. <br>En la segona part veiem una manera més pràctica, ja que es separen els valors de l'array amb comes. També en la segona part hi ha muntat un for per a llistar tots els elements de cada array de dues maneres diferents. A més, podem comprovar que si l'array té una posició molt alta al primer for, mostrarà tots els arrays de per mig com a undefined però en el segon cas, que té una posició encara més alta, els arrays no definits no apareixen. El codi de la dreta està aplicat al fitxer d'experiments</td>
+			<td><img src="imgjs/11.PNG" alt="fotojs"></td>
+		</tr>
+	</table>
+	<h2 id="instant">Convocacions de funcions instantànies</h2>
+	<div>Hi ha vegades en les que quan cridem una funció una variable pot haver canviar, per això hi ha una fòrmula per a que la funció s'executi en el seu propi espai d'execució:</div>
+	<table>
+		<tr>
+			<td>A la imatge es pot veure la fórmula, que en resum és(function (window) {cosdelafunció; window.noi = noi; })(window);<br>
+			En el cas de la foto, s'aplica la fórmula per si més tard es canvia el var noi o el var salu, ja que en cas que no s'apliqués la funció seria executada amb els valors més nous. En resum, la fórmula serveix per a invocar la funció en un espai d'execució independent</td>
+			<td><img src="imgjs/12.PNG" alt="fotojs"></td>
+		</tr>
 	</table>
 	<h2 id="fotos">Fotos:</h2>
 		<a href="https://www.instagram.com/therogersito/?hl=es" target="_blank"><img src="fotocuqui.PNG" height="300" width="300" alt="insta Roger"></a>

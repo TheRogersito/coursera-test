@@ -47,6 +47,9 @@
 					<li><a href="#variables">Variables i Funcions Simples</a></li>
 					<li><a href="#types">Types</a></li>
 					<li><a href="#tipics">Estructures típiques</a></li>
+					<li><a href="#objecte">Objectes dins d'objectes</a></li>
+					<li><a href="#copia">Còpia de variables</a></li>
+					<li><a href="#constructor">Constructor de funcions</a></li>
 				</ol>
 			</li>
 			<li><a href="#fotos">Fotos</a></li>
@@ -323,6 +326,25 @@
 		<td>Una manera més senzilla de crear els objectes dins d'objectes és fer servir les {} seguint la sintaxi de la dreta</td>
 		<td><img src="imgjs/8.PNG" alt="fotojs"></td>
 		</tr>
+	</table>
+	<h2 id="copia">Còpia de variables</h2>
+	<div>A Javascript hi ha dues maneres de copiar variables:
+		<ul>
+			<li>Per valor: és una còpia simple d'un valor a una variable diferent, si aquest valor canvia a la segona variable, la primera variable seguirà tenint el mateix valor</li>
+			<li>Per referència: el que es copia és una adreá de memòria cap a un valor, per tant si el valor canvia, el valor de les variables copiades també ja que punten a l'adreça del valor i no al valor en si</li>
+		</ul>
+	</div>
+	<h2 id="constructor">Constructor de funcions</h2>
+	<div>Per començar hem de deixar clar que l'objecte this és un objecte especial que apunta al objecte window del navegador. Podem desar funcions com a variables simples fent serrvir la següent escriptura: var x = new y(z);. La <span class="blau">x</span> seria el nom de la variable, <span class="vermell">new</span>és necessari ja que es crea una nova instància de la funció, la <span class="verd">y</span> seria el nom de la funció ja creada i <span class="lila">z</span> és la variable dins de la funció. En el següent exemple podem veure com va la cosa:</div>
+	<table>
+		<tr>
+			<td>En aquesta imatge veiem per comenár la manera de desar una funció com a variable en dos ocasions: les línies que començen per <span class="blau">var</span>, que amb la funció respectiva vindrien a aplicar un valor per la variable <span class="taronja">this</span>.radius<br>
+			Després de la primera funció veiem la variable cercle.prototype.getArea(la variable cercle.prototype és creada automàticament amb la funció cercle, així que no ens hem de preocupar) que el que far és cridar a una funció que és una funció matemàtica, així que al final podem calcular l'àrea de qualsevol cerclecreant un nou var que apliqui un valor nou a <span class="taronja">radius</span></td>
+			<td><img src="imgjs/9.PNG" alt="fotojs"></td>
+		</tr>
+		<tr>
+			<td>En el següent exemple, veiem que si cridem a l'objecte <span class="taronja">this</span> a dins d'un altre objecte cridarà a l'objecte arrel(en aquest cas literalCircle) enlloc de l'objecte window del navegador. No obstant si creem una funció dins d'una funció dins de l'objecte(no l'hem de fer de la maera habitual, ha de ser "Nomdefunció: function() {cos}") i cridem a l'objecte <span class="taronja">this</span> dins de la funció de més endins, cridarà al window del navegador. Per a que cridi al <span class="taronja">this</span> de l'objecte principal hem de crear el var self dins de la primera funció, que sigui equivalent al objecte <span class="taronja">this</span> i fer servir la variable self dins de la funció interior</td>
+			<td><img src="imgjs/10.PNG" alt="fotojs"></td>
 	</table>
 	<h2 id="fotos">Fotos:</h2>
 		<a href="https://www.instagram.com/therogersito/?hl=es" target="_blank"><img src="fotocuqui.PNG" height="300" width="300" alt="insta Roger"></a>

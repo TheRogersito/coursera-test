@@ -123,3 +123,44 @@ function multi1(fac) {
 }
 var fuc = multi1(4);
 console.log(fuc(15));
+
+function cercle (radius) {
+  this.radius = radius;
+}
+cercle.prototype.getArea = 
+  function () {
+    return Math.PI * Math.pow(this.radius, 2);
+  };
+var uncercle = new cercle(10);
+console.log(uncercle.getArea());
+var altrecercle = new cercle(20);
+console.log(altrecercle);
+
+var literalCircle = {
+  radius: 10,
+
+  getArea: function () {
+    var self = this;
+    console.log(this);
+
+    var increaseRadius = function () {
+      self.radius = 20;
+    };
+    increaseRadius();
+    console.log(this.radius);
+
+    return Math.PI * Math.pow(this.radius, 2);
+  }
+};
+console.log(literalCircle.getArea());
+
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.bark = function () {
+  console.log(this.name + " likes barking! Bark!");
+}
+
+var max = new Dog("Max", "Buddy");
+max.bark();

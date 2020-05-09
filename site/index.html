@@ -52,6 +52,8 @@
 					<li><a href="#constructor">Constructor de funcions</a></li>
 					<li><a href="#array">Arrays</a></li>
 					<li><a href="#instant">Convocacions de funcions instantànies</a></li>
+					<li><a href="#sobree">Sobreescriure al document html amb el javascript</a></li>
+					<li><a href="#event">Argument event</a></li>
 				</ol>
 			</li>
 			<li><a href="#fotos">Fotos</a></li>
@@ -367,6 +369,26 @@
 			<td><img src="imgjs/12.PNG" alt="fotojs"></td>
 		</tr>
 	</table>
+	<h2 id="sobree">Sobreescriure al document html amb el javascript</h2>
+	<div class="boto" style="margin-top:20px"><a href=expjavascript.html target="_blank">Experiments amb Javascript</a></div>
+	<div>Hi ha diverses maneres de fer que el javascript escrigui al dicument html:</div>
+	<table>
+		<tr>
+			<td class="left">
+				<ul>
+					<li>document.getElementById("id"): selecciona l'element tal qual del html segons el seu ID, però no toca el seu valor ni el contingut</li>
+					<li>document.getElementById("id").value: selecciona el valor d'un element segons el seu ID, per exeple el contingut d'una caixa de text</li>
+					<li>document.getElementById("id").textcontent: selecciona el contingut d'un element segons el seu ID, per exemple el contingut d'un div o d'un p</li>
+					<li>document.getElementById("id").innerHTML: actua com el .textcontent però aquest cop interpreta el contingut com a HTML i no com a text</li>
+					<li>document.queryselector("element, .class o #id"): fa que la selecció actui com un css, és a dir que podem seleccionar segons element, class o id, però en cas que hi hagi més d'un element així, seleccionarà el primer que trobi</li>
+				</ul>
+			</td>
+			<td><img src="imgjs/13.PNG" alt="fotojs"></td>
+		</tr>
+	</table>
+	<h2 id="event">Argument event</h2>
+	<div>L'argument event fa que es puguin activar o desactivar certes coses de la pàgina actual del navegador, com l'activar un succés apretant una tecla o fent algo amb el ratolí. Pels noms dels events hi ha el següent enllaç per a consultar<br>
+	<a href="https://www.w3schools.com/jsref/obj_event.asp">Events</a></div>
 	<h2 id="fotos">Fotos:</h2>
 		<a href="https://www.instagram.com/therogersito/?hl=es" target="_blank"><img src="fotocuqui.PNG" height="300" width="300" alt="insta Roger"></a>
 		<a href="https://www.instagram.com/cclaudiatinamentee/?hl=es" target="_blank"><img src="claudia.PNG" height="300" width="300" alt="insta Claudia"></a>

@@ -88,6 +88,12 @@ table{
 td{
 	width: 50%;
 }
+#decscript{
+	margin-top:100px;
+}
+.left{
+	text-align: left;
+}
 @media (max-width: 767px){
 .boto a:link, .boto a:visited {
 	display: block;

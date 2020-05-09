@@ -3,12 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="expjavascript.js"></script>
 	<title>Experiments amb Javascript</title>
 </head>
 <body>
 	<div class="boto"><a href="index.html">Per a tornar enrere fer click aquí</a></div>
-	<button onclick="test()">Demanar bocatacalamares</button>
-	<button onclick="decidir()">Multiplicar</button>
+	<div id="botons">
+		<button onclick="test()">Demanar bocatacalamares</button>
+		<button onclick="decidir()">Multiplicar</button>
+		<p>Vull enviar una abraçada a <input type="text" id="abra"><button onclick="bra()">Enviar</button></p>
+		<p>Apreta Shift i mou el ratolí</p>
+	</div>
+	<div id="decscript">
+		Aquí comença el contingut creat pel javascript<br>
+		<div id="mess" class="blau"></div>
+		<div><p id="corx"></p><p id="cory"></p>
+	</div>
+	<script type="text/javascript" src="expjavascript.js"></script>
 </body>
 </html>

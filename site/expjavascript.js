@@ -165,37 +165,54 @@ function decidir(){
 // var max = new Dog("Max", "Buddy");
 // max.bark();
 
-var hola = new Array();
-hola[0] = "Subnormals";
-hola[1] = 14;
-hola[2] = function (pet){
-	console.log("M'agraden els "+pet)
-}
-hola[3] = {colo: " caca de vaca"}
-console.log(hola)
-hola[2](hola[0])
-console.log(hola[3].colo)
+// var hola = new Array();
+// hola[0] = "Subnormals";
+// hola[1] = 14;
+// hola[2] = function (pet){
+// 	console.log("M'agraden els "+pet)
+// }
+// hola[3] = {colo: " caca de vaca"}
+// console.log(hola)
+// hola[2](hola[0])
+// console.log(hola[3].colo)
 
-var coses = ["Doctor", "Eustaqui", "Arbre","Subnormal"]
-coses[10] = "Rata peluda"
-for (var i = 0; i < coses.length; i++) {
-	document.write("Treballo de "+coses[i]+"<br>")
-}
-var cosa1 = ["Catifa", "Pantufla", "Senyor lleig"]
-cosa1[99] = "Rata peluda"
-for (var llista in cosa1){
-	document.write("Soc un/a "+cosa1[llista]+"<br>")
-}
+// var coses = ["Doctor", "Eustaqui", "Arbre","Subnormal"]
+// coses[10] = "Rata peluda"
+// for (var i = 0; i < coses.length; i++) {
+// 	document.write("Treballo de "+coses[i]+"<br>")
+// }
+// var cosa1 = ["Catifa", "Pantufla", "Senyor lleig"]
+// cosa1[99] = "Rata peluda"
+// for (var llista in cosa1){
+// 	document.write("Soc un/a "+cosa1[llista]+"<br>")
+// }
 
-(function (window) {
-  var noi = {};
-  noi.name = "Cabrón";
-  var salu = "Hola ";
-  noi.sayHello = function () {
-    console.log(salu + noi.name);
+// (function (window) {
+//   var noi = {};
+//   noi.name = "Cabrón";
+//   var salu = "Hola ";
+//   noi.sayHello = function () {
+//     console.log(salu + noi.name);
+//   }
+
+//   window.noi = noi;
+
+// })(window);
+// noi.sayHello();
+
+function bra(){
+  var abra = document.getElementById("abra").value;
+  abra = abra || "una persona molt especial per tu";
+  var missatge = "Has enviat una abraçada a "+abra+" i està molt agraït/da"
+  document.getElementById("mess").textContent = missatge
+}
+document.querySelector("body").addEventListener("mousemove",
+  function(event){
+    if (event.shiftKey === true){
+    var cordx = (event.clientX);
+    document.getElementById("corx").textContent = cordx
+    var cordy = (event.clientY);
+    document.getElementById("cory").textContent = cordy
+    }
   }
-
-  window.noi = noi;
-
-})(window);
-noi.sayHello();
+  );

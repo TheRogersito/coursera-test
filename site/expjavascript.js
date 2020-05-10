@@ -204,7 +204,7 @@ function bra(){
   var abra = document.getElementById("abra").value;
   abra = abra || "una persona molt especial per tu";
   var missatge = "Has enviat una abraçada a "+abra+" i està molt agraït/da"
-  document.getElementById("mess").textContent = missatge
+  document.getElementById("mess").innerHTML = "<h2>" + missatge + "</h2>"
 }
 document.querySelector("body").addEventListener("mousemove",
   function(event){
@@ -233,8 +233,7 @@ document.addEventListener("DOMContentLoaded",
               message += res.numberOfT + 1;
               message += " displays for coding.";
 
-              document.querySelector("#content")
-                .innerHTML = "<h2>" + message + "</h2>";
+              document.querySelector("#content").innerHTML = "<h2>" + message + "</h2>";
             });
       });
     });

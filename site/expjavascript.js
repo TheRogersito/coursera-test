@@ -204,7 +204,7 @@ function bra(){
   var abra = document.getElementById("abra").value;
   abra = abra || "una persona molt especial per tu";
   var missatge = "Has enviat una abraçada a "+abra+" i està molt agraït/da"
-  document.getElementById("mess").innerHTML = "<h2>" + missatge + "</h2>"
+  document.getElementById("mess").innerHTML = missatge
 }
 document.querySelector("body").addEventListener("mousemove",
   function(event){

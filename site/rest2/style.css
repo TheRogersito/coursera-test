@@ -1,0 +1,304 @@
+body{
+	font-size: 16px;
+	color: white;
+	background-color: #5F00BA;
+	font-family: Helvetica;
+}
+
+/** HEADER **/
+#header-nav{
+	background-color: #538900;
+	border-radius: 0;
+	border: 0;
+}
+#logo-img{
+	background: url('imatges/logo_gran.jpg') no-repeat;
+	width:186px;
+	height:52px;
+	margin: 10px 15px 10px 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+  border-color: #5F00BA;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Source Sans pro', serif;
+  color: #3B0092;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-brand p{
+	margin-top:15px;
+	color:#5F00BA;
+}
+#estrella{
+	height: 25px;
+	width: 25px;
+}
+.navbar-brand p span{
+	vertical-align:middle;
+}
+#nav-list{
+	margin-top:10px;
+}
+#nav-list a{
+	color: #5F00BA;
+	text-align:center;
+}
+#nav-list a:hover{
+	background-color: green;
+}
+#nav-list a span{
+	font-size: 1em;
+}
+#phone {
+	margin-top:5px;
+}
+#phone a {
+	text-align: right;
+	padding-bottom:0;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #5F00BA;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: green
+}
+#call-btn > a{
+	font-size:1.2em;
+	display: block;
+	background-color: #538900;
+	margin: 0 20px;
+	border: 1px solid black;
+	padding-left: 10px;
+	text-align: center;
+	color:#5F00BA;
+}
+#terrassa{
+	width:95%;
+	margin: 10px 15px 10px 0;
+	padding:0;
+}
+.categoria{
+	height: 250px;
+	max-width: 90%;
+	margin-bottom: 30px;
+	position:relative;
+	border: 2px solid lightgray;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.categoria:hover{
+	box-shadow: 0 1px 5px 1px black;
+}
+#entrepansc{
+	background: url("imatges/frank.jpg") no-repeat;
+	background-size: cover;
+}
+#especials{
+	background: url("imatges/aletes.jpg") no-repeat;
+	background-size: cover;
+}
+#aperitius{
+	background: url("imatges/patates.jpg") no-repeat;
+	background-size: cover;
+}
+#hamb{
+	background: url("imatges/hamb.jpg") no-repeat;
+	background-size: cover;
+}
+#entrepansf{
+	background: url("imatges/bocata.jpg") no-repeat;
+	background-size: cover;
+}
+#pizza{
+	background: url("imatges/pizza.jpg") no-repeat;
+	background-size: cover;
+}
+#combi{
+	background: url("imatges/combi.jpg") no-repeat;
+	background-size: cover;
+}
+#beguda{
+	background: url("imatges/beguda.jpg") no-repeat;
+	background-size: cover;
+}
+#gelats{
+	background: url("imatges/gelats.jpg") no-repeat;
+	background-size: cover;
+}
+#cafes{
+	background: url("imatges/cafes.jpg") no-repeat;
+	background-size: cover;
+}
+#carns{
+	background: url("imatges/carns.jpg") no-repeat;
+	background-size: cover;
+}
+#coctel{
+	background: url("imatges/coctel.jpg") no-repeat;
+	background-size: cover;
+}
+.categoria span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: capitalize;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.item-sencer{
+	margin-top:15px;
+}
+.titol-item{
+	text-decoration: underline;
+	text-align: center;
+}
+.desc-item{
+	font-style: italic;
+}
+.ingredients{
+	font-size: .8em;
+}
+.preu-item{
+	margin-top:10px;
+	clear:left;
+}
+.hr-entrepans{
+	width:65%;
+}
+.panel-footer{
+	background-color: #353535;
+	border: 0;
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.panel-footer section{
+	text-align: justify-all;
+}
+.panel-footer section span{
+	font-size: 1.2em;
+}
+#hours, #address{
+	line-height: 2;
+}
+#address p{
+	color: green;
+	font-size: .8em;
+}
+#testimonials{
+	font-style: italic;
+}
+.panel-footer div.text-center{
+	margin-top: 35px;
+}
+@media (min-width: 1200px){
+#header-nav{
+	height: 90px;
+}
+.jumbotron{
+	background: url('imatges/dins.jpg') no-repeat;
+	background-size: cover;
+	height: 600px;
+	width:90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+#header-nav{
+	height: 90px;
+}
+#collapsable-nav{
+	font-size:1.2vw;
+}
+.jumbotron{
+	background: url('imatges/dins.jpg');
+	background-size: cover;
+	height: 500px;
+	width:90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+#header-nav{
+	height: 90px;
+}
+#collapsable-nav{
+	font-size:1.2vw;
+}
+.jumbotron{
+	background: url('imatges/dins.jpg') no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+}
+@media (max-width: 767px){
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p {
+    font-size: 2.5vw;
+    margin-top: 12px;
+  }
+  #collapsable-nav{
+  	font-size:3vw;
+  }
+  #collapsable-nav a span{
+  	margin-right: 5px;
+  }
+  .container .jumbotron{
+  	background-color: #5F00BA;
+	padding:0;
+}
+.jumbotron{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	max-height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+}
+#foto-dins{
+	max-height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.panel-footer{
+	text-align: center;
+}
+.panel-footer hr{
+	width: 50%;
+}
+.foto-item{
+	width:40%;
+	float:left;
+	margin-left:5px;
+	margin-right:20px;
+}
+}

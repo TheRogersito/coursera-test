@@ -94,6 +94,18 @@ td{
 .left{
 	text-align: left;
 }
+.centre{
+	text-align: center;
+}
+#tllista{
+	width: 100%;
+}
+.cella{
+	width: 33%;
+}
+.tcella{
+	font-size: 2em;
+}
 @media (max-width: 767px){
 .boto a:link, .boto a:visited {
 	display: block;

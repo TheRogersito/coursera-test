@@ -91,12 +91,15 @@ $ajaxUtils.sendGetRequest(
 
 // Builds HTML for the home page based on categories array
 // returned from the server.
-dc.buildAndShowHomeHTML = function () {
-  // Load home snippet page
-  showLoading("#main-content");
-  $ajaxUtils.sendGetRequest(
-    homeHtmlUrl,
-    function (homeHtml) {
+showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  homeHtmlUrl,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+});
 
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
@@ -121,10 +124,6 @@ dc.buildAndShowHomeHTML = function () {
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
-
-    },
-    false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
-}
 
 
 // Given array of category objects, returns a random category object.

@@ -207,9 +207,16 @@ function bra(){
   var missatge = "Has enviat una abraçada a "+abra+" i està molt agraït/da"
   document.getElementById("mess").innerHTML = missatge
 }
-function bre(){
-  document.getElementById("mesi").innerHTML='<!--#include file="testextern.html" -->';
-  }
+$(document).ready(function(){  
+  
+    $('#carrega').click(function() {  
+        $.ajax({  
+            url: 'testextern.html',  
+            success: function(data) {  
+                $('#mesi').html(data);  
+            }  
+        });  
+    });
 document.querySelector("body").addEventListener("mousemove",
   function(event){
     if (event.shiftKey === true){

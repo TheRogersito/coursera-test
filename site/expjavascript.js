@@ -199,6 +199,7 @@ function decidir(){
 
 // })(window);
 // noi.sayHello();
+var teste = "testextern.html"
 
 function bra(){
   var abra = document.getElementById("abra").value;
@@ -206,6 +207,9 @@ function bra(){
   var missatge = "Has enviat una abraçada a "+abra+" i està molt agraït/da"
   document.getElementById("mess").innerHTML = missatge
 }
+function bre(){
+  document.getElementById("mesi").innerHTML='<!--#include file="testextern.html" -->';
+  }
 document.querySelector("body").addEventListener("mousemove",
   function(event){
     if (event.shiftKey === true){

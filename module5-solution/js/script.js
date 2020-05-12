@@ -142,7 +142,12 @@ function chooseRandomCategory (categories) {
   return categories[randomArrayIndex];
 }
 
-
+dc.MainPage = function () {
+      showLoading("#main-content");
+      $ajaxUtils.sendGetRequest(
+        homeHtmlUrl,
+        );
+};
 // Load the menu categories view
 dc.loadMenuCategories = function () {
   showLoading("#main-content");

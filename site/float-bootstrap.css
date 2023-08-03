@@ -1,0 +1,36 @@
+html{
+	font-size:18px;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: times new roman;
+}
+div{
+	height: 500px;
+}
+.dins{
+	border: 1px solid black;
+}
+#caixa1{
+	background-color: lightblue;
+}
+#caixa2{
+	background-color: lightyellow;
+}
+#caixa3{
+	background-color: lightgray;
+}
+#caixa4{
+	background-color: orange;
+}
+#caixa5{
+	background-color: pink;
+}
+#caixa6{
+	background-color: green;
+}
+#caixa7{
+	background-color: yellow;
+}

@@ -1,0 +1,50 @@
+*{
+	box-sizing: order-box;
+}
+body{
+	background: url("back.jpg");
+}
+h1, #el {
+	font-family: Tahoma;
+	text-decoration: underline;
+}
+.hey {
+	color: green;
+	background-color: lightgray;
+}
+div > span{
+	font-size: 26px;
+}
+div span{
+	color: blue;
+}
+p {
+	font-style: italic;
+}
+div {
+	font-weight: bold;
+}
+#test, #test2{
+	background-color: blue
+}
+.caixa{
+	background-color: yellow;
+	float: left;
+	margin: 20px;
+	border: 5px solid red;
+	padding: 10px;
+	width:100px;
+	height:90px;
+}
+#caixa1{
+	overflow: visible;
+}
+#caixa2{
+	overflow: hidden;
+}
+#caixa3{
+	overflow: auto;
+}
+#caixa4{
+	overflow: scroll;
+}

@@ -1,0 +1,150 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	background: url(back.jpg);
+	font-family: times new roman;
+	font-size:180%;
+	text-align: justify;
+	position:relative;
+	margin-left:20px;
+	margin-top:20px;
+	margin-right:2%;
+}
+#hover:hover {
+	background-color: blue
+}
+#active:active {
+	background-color: blue
+}
+.boto a:link, .boto a:visited {
+	text-decoration: none;
+	background-color: lightblue;
+	border: 1px solid black;
+	color: black;
+	display: block;
+	width: 400px;
+	text-align: center;
+	margin-bottom: 1px;
+}
+.boto a:hover{
+	background-color: #64D5FF;
+}
+.boto a:active{
+	background-color: blue;
+}
+h2 {
+	text-decoration: underline;
+}
+#peditable {
+	color: blue;
+	font-style: italic;
+}
+#buit{
+	height:75px;
+}
+#botoadalt{
+	position:relative;
+	top:10px;
+}
+#caixaprova{
+	background-color: lightgreen;
+	padding: 15px 15px 15px 15px;
+	border: 10px solid black;
+	margin: 50px;
+	width: 150px;
+}
+.box-sizing{
+	font-weight: bold;
+}
+.marges{
+	margin-top:20px;
+}
+.important{
+	font-size:36px;
+}
+.imp{
+	font-weight: bold;
+}
+.blau{
+	color:blue;
+}
+.verd{
+	color:green;
+}
+.lila{
+	color:purple;
+}
+.vermell{
+	color:red;
+}
+.taronja{
+	color:orange;
+}
+table{
+	text-align: center;
+	margin-top: 20px;
+}
+td{
+	width: 50%;
+}
+#decscript{
+	margin-top:100px;
+}
+.left{
+	text-align: left;
+}
+.centre{
+	text-align: center;
+}
+#tllista{
+	width: 100%;
+}
+.cella{
+	width: 33%;
+}
+.tcella{
+	font-size: 2em;
+}
+@media (max-width: 767px){
+.boto a:link, .boto a:visited {
+	display: block;
+	width: 300px;
+}
+}
+#titolcarta{
+	text-align: center
+}
+.fotoins{
+	height: 300px;
+	width: 300px;
+	position: absolute;
+}
+#contcarta{
+	text-align: center;
+	position: absolute;
+	left:25%;
+	top: 150px;
+	width: 50%;
+}
+@media (max-width: 1400px){
+#contcarta{
+	left: 50%;
+}
+}
+#fotoins1{
+	left: 50px;
+	top: 50px;
+}
+#fotoins2{
+	left: 50px;
+	top: 400px;
+}
+#fotoins3{
+	left: 1500px;
+	top: 50px;
+}
+#fotoins4{
+	left: 1500px;
+	top: 400px;
+}
